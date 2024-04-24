@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'f1';
+    src: url('./font/4UaOrEtFpBISc36j.woff2') format('woff2');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    padding: 0.1px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 0.1px;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    z-index: 9999;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    /* background: pink; */
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(15, 15, 23);
+    font-family: f1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+nav button{
+    padding: 1.1vw 1.3vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    font-family: f1;
+    font-weight: 600;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    background-image: linear-gradient(to right, rgb(1, 150, 231), rgb(255, 0, 164));
+}
+nav button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 164);
+    top: 0;
+    left: 100%;
+    transition: all ease 0.3s;
+    z-index: -1;
+}
+
+nav button:hover::after{
+    left: 0;
+}
+
+.nav-link ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.nav-link ul li{
+    position: relative;
+    padding: 0 1vw;
+}
+
+.nav-link ul li a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link ul li a:hover{
+    color: #18FEF5;
+}
+.dropdown__menu{
+    display: none; 
+}
+
+.nav-link ul li:hover .dropdown__menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(15, 15, 23);
+    width: 200px;
+}
+
+.dropdown__menu ul{
+    display: block;
+    margin-top: 10px;
+    padding: 1vw 0;
+}
+
+.dropdown__menu ul li{
+    padding: 0.5vw 2vw;
+}
+.fs{
+    padding: 5px;
+}
+
+.page1{
+    /* width: 100%;
+    min-height: 100vh; */
+    background-image: url("./images/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;   
+}
+
+
