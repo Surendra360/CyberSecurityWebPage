@@ -3,6 +3,8 @@
     src: url('./font/4UaOrEtFpBISc36j.woff2') format('woff2');
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -66,6 +68,7 @@ nav button{
     position: relative;
     overflow: hidden;
     z-index: 10;
+    letter-spacing: 2px;
     background-image: linear-gradient(to right, rgb(1, 150, 231), rgb(255, 0, 164));
 }
 nav button::after{
@@ -98,7 +101,7 @@ nav button:hover::after{
 }
 
 .nav-link ul li a{
-    background-color: red;
+    /* background-color: red; */
     color: white;
     text-decoration: none;
 }
@@ -133,8 +136,8 @@ nav button:hover::after{
 }
 
 .page1{
-    /* width: 100%;
-    min-height: 100vh; */
+    width: 100%;
+    height: 135vh;
     background-image: url("./images/home-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,3 +145,87 @@ nav button:hover::after{
 }
 
 
+.page1-content {
+    width: 50%;
+    padding: 8vw;
+    color: white;
+    font-family: f1;
+}
+.page1-content h1{
+    font-size: 4vw;
+}
+.page1-content p{
+    font-size: 1.2vw;
+    padding: 2vw 0;
+}
+.page1-content button{
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    font-family: f1;
+    font-weight: 600;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    background-image: linear-gradient(to right, rgb(1, 150, 231), rgb(255, 0, 164));
+
+}
+.page1-content button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 164);
+    top: 0;
+    left: 100%;
+    transition: all ease 0.3s;
+    z-index: -1;
+}
+
+.page1-content button:hover::after{
+    left: 0;
+}
+
+
+.page1-flag {
+    width: 100%;
+    height: max-content;
+    padding: 2vw 8vw;
+    /* background-color: red; */
+}
+.page1-flag1 {
+    
+    background-color: #14192D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.counter{
+    background-color: #1A2237;
+    width: max-content;
+    text-align: center;
+    padding: 1vw 5.60vw;
+    height: 100%;
+}
+.counter h1{
+    font-size: 5vw;
+    color: white;
+    font-family: "Londrina Outline", sans-serif;
+    letter-spacing: 2px;
+}
+.counter p{
+    font-size: 1.2vw;
+    color: white;
+    padding: 0.5vw;
+    font-family: f1;
+}
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #14192D;
+}
