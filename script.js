@@ -5,16 +5,16 @@ function upData(){
 const target = Number(counter.getAttribute('data-target'))
 const count = Number(counter.innerText)
 const inc = target / speed
-if(count > target){
+
+if(count < target){
 counter.innerText = Math.floor(inc + count)
-setTimeout(upData, 1)
+setTimeout(upData, 100)
 }else{
 counter.innerText = target
 }
 }
 upData()
 })
-
 
 //for cursor
 function mouse() {
@@ -23,7 +23,7 @@ function mouse() {
             top: e.y,
             left: e.x,
             duration: 1,
-            delay: 0.5
+            // delay: 0.5
         })
     })
 }
@@ -63,3 +63,17 @@ nav()
 // })
 
 
+function count() {
+    gsap.to(".count", {
+    
+        scrollTrigger: {
+            trigger: ".page1",
+            scroller: ".main",
+            // markers:true,
+            start: "top 0",
+            end: "top -50%",
+            scrub: true,
+        }
+    })
+}
+count()

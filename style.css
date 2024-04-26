@@ -210,7 +210,7 @@ nav button:hover::after{
     padding: 1vw 5.60vw;
     height: 100%;
 }
-.counter h1{
+.counter .count{
     font-size: 5vw;
     color: white;
     font-family: "Londrina Outline", sans-serif;
@@ -226,6 +226,6 @@ nav button:hover::after{
 
 .page2{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #14192D;
 }
