@@ -54,26 +54,17 @@ nav()
 //     delay:1
 // })
 
-// gsap.from("nav ul .b2 ",{
-//     y:-50,
-//     opacity:0,
-//     duration: 1,
-//     stagger:0.2,
-//     delay:1
-// })
-
-
-function count() {
-    gsap.to(".count", {
+gsap.from('.page2 h1',{
+    y:-50,
+    opacity:0,
+    duration: 1,
+    delay:1,
+    scrollTrigger:{
+        trigger:".page2 h1",
+        scroll:"main",
+        markers:true
+    }
     
-        scrollTrigger: {
-            trigger: ".page1",
-            scroller: ".main",
-            // markers:true,
-            start: "top 0",
-            end: "top -50%",
-            scrub: true,
-        }
-    })
-}
-count()
+})
+
+

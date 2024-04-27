@@ -32,6 +32,7 @@ body{
     mix-blend-mode: exclusion;
     position: fixed;
     z-index: 9999;
+    cursor: default;
 }
 
 .main{
@@ -228,4 +229,72 @@ nav button:hover::after{
     width: 100%;
     min-height: 100vh;
     background-color: #14192D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vw;
+    font-family: f1;
+    padding-top: 12vw;
+}
+.page2-section1{
+    width: 100%;
+    background-color: #14192D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2-content1{
+    width: 50%;
+    padding: 4vw;
+}
+.page2-content1 img{
+    width: 100%;
+}
+.page2-content2{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1vw;
+}
+.page2-content2 span{
+    background-color: #16757D;
+    padding: 0.5vw 2vw;
+    border-radius: 50px;
+    font-size: 1.1vw;
+}
+
+.page2-content2 h1{
+    font-size: 2.5vw;
+}
+
+.page2-content2-list1{
+    padding: 1.5vw;
+    background-color: #1A2237;
+    border-radius: 10px;
+}
+.page2-content2-list1 h3{
+    padding-bottom: 1vw;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.page2-content2-list1 h3 img{
+    padding-right: 10px;
+}
+.page2-content2-list1 p{
+    font-size: 1.1vw;
+}
+
+
+
+
+.page3{
+    width: 100%;
+    height: 100%;
+    background: papayawhip;
+    text-align: center;
 }
