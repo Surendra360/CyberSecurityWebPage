@@ -229,10 +229,7 @@ nav button:hover::after{
     width: 100%;
     min-height: 100vh;
     background-color: #14192D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8vw;
+    padding: 8vw 0vw;
     font-family: f1;
     padding-top: 12vw;
 }
@@ -242,10 +239,12 @@ nav button:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0vw 8vw;
 }
 .page2-content1{
     width: 50%;
-    padding: 4vw;
+    padding: 4vw 0;
+    padding-right: 4vw;
 }
 .page2-content1 img{
     width: 100%;
@@ -289,6 +288,87 @@ nav button:hover::after{
     font-size: 1.1vw;
 }
 
+
+.page2-section2 {
+    width: 100%;
+    color: white;
+    font-family: f1;
+    padding: 4vw 8vw;
+    
+}
+.section2-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 0;
+}
+.section2-head-part1 span{
+    background-color: #16757D;
+    padding: 0.5vw 2vw;
+    border-radius: 50px;
+    color: white;
+}
+.section2-head-part1 h1{
+    font-size: 3vw;
+    padding: 2vw 0;
+    width: 70%;
+    font-weight: 600;
+}
+.section2-head-part2 button {
+    padding: 0.8vw 2vw;
+    color: #18FEF5;
+    background-color: transparent;
+    border: 2px solid #18FEF5;
+    font-size: 1.1vw;
+    transition: all linear 0.25s;
+    cursor: pointer;
+}
+.section2-head-part2 button:hover{
+    background-color: #18FEF5;
+    color: black;
+}
+.section2-content {
+    width: 100%;
+    display: flex;
+    gap: 3vw;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.section2-content1 img {
+    width: 100%;
+    padding-bottom: 1vw;
+}
+.section2-content1 p{
+    padding: 1vw 0;
+}
+
+.section2-content1 button{
+    padding: 1vw 0;
+    color: #18FEF5;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+.page2 i{
+    padding: 0 1vw;
+}
+
+.page2-section3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18FEF5;
+    font-family: f1;
+    margin: 4vw 0;
+}
+.page2-section3 span{
+    padding: 2vw 0vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
 
 
 
